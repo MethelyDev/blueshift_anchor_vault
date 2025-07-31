@@ -90,3 +90,4 @@ pub enum VaultError {
     InvalidAmount,
 }
 // end of the code snippet
+// end of the code snippet
