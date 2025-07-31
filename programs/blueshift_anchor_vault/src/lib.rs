@@ -38,7 +38,6 @@ pub mod blueshift_anchor_vault {
         msg!("Deposited {} lamports to vault", amount);
         Ok(())
     }
-
     pub fn withdraw(ctx: Context<VaultAction>) -> Result<()> {
         
         require_neq!(
