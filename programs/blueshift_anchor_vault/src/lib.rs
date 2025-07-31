@@ -52,8 +52,9 @@ pub mod blueshift_anchor_vault {
         let signer_key = ctx.accounts.signer.key();
         let signer_seeds = &[b"vault", signer_key.as_ref(), &[ctx.bumps.vault]];
 
-        
+    
         transfer(
+            
             CpiContext::new_with_signer(
                 ctx.accounts.system_program.to_account_info(),
                 Transfer {
