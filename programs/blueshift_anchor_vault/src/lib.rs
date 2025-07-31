@@ -89,5 +89,3 @@ pub enum VaultError {
     #[msg("Invalid amount")]
     InvalidAmount,
 }
-// end of the code snippet
-// end of the code snippet
