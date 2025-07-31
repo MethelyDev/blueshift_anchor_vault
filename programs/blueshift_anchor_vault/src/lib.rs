@@ -46,7 +46,6 @@ pub mod blueshift_anchor_vault {
             VaultError::InvalidAmount
         );
 
-        
         let withdraw_amount = ctx.accounts.vault.lamports();
 
     
