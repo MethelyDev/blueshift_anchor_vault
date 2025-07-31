@@ -48,13 +48,11 @@ pub mod blueshift_anchor_vault {
 
         let withdraw_amount = ctx.accounts.vault.lamports();
 
-    
         let signer_key = ctx.accounts.signer.key();
         let signer_seeds = &[b"vault", signer_key.as_ref(), &[ctx.bumps.vault]];
-
     
         transfer(
-            
+
             CpiContext::new_with_signer(
                 ctx.accounts.system_program.to_account_info(),
                 Transfer {
@@ -91,3 +89,4 @@ pub enum VaultError {
     #[msg("Invalid amount")]
     InvalidAmount,
 }
+
